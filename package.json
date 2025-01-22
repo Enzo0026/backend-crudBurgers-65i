@@ -1,0 +1,23 @@
+{
+  "name": "backend-crudburgers",
+  "version": "1.0.0",
+  "description": "API REST para una hamburgueseria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enzo0026/backend-crudBurgers-65i.git"
+  },
+  "keywords": [
+    "API",
+    "REST"
+  ],
+  "author": "Enzo Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enzo0026/backend-crudBurgers-65i/issues"
+  },
+  "homepage": "https://github.com/Enzo0026/backend-crudBurgers-65i#readme"
+}
