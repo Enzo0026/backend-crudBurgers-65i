@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import path from 'path';
 import './database';
+import router from './routes/products.routes';
 
 //console.log("desde mi backend");
 
@@ -25,12 +26,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true})); //Estos dos últimos nos permiten recibir e interpretar el json de la request
 /* app.use(express.static('public')); */
 app.use(express.static(path.join(__dirname, '../public')));
+
 //Rutas de prueba
 
-app.get('/', (req, res)=>{
+app.use('/api-v1', router)
+
+/* app.get('/', (req, res)=>{
     res.send('Esto es una prueba de mi backend')
 })
 
 app.delete('/borrarProducto', (req, res)=>{
     res.send('Se borró el producto')
-})
+}) */
+
