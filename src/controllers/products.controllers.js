@@ -6,6 +6,7 @@ productController.showProduct = (req, res)=>{
 
 export default productController; */
 
+import { validationResult } from "express-validator";
 import Product from "../models/product";
 
 const showProduct = async (req, res) => {
@@ -46,7 +47,14 @@ const { productName, price, urlImg, category } = req.body;
 
   try {
     //console.log(req.body);
-    //Validar
+    /* //Validar
+    const result = validationResult(req);
+    if (result.isEmpty()) {
+        return res.status(400).json({
+             errors: result.array() //Devuelve la lista de errores 
+            });
+    } */
+
 
     //Crear un objeto para guardarlo en la BD
     const newProduct = new Product({
